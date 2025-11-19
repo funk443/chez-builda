@@ -13,7 +13,7 @@
 ;;; Main build configurations are set here.
 
 (define entry-file
-  ;; This content of this file should be something like this:
+  ;; The content of this file should be something like this:
   ;;
   ;; ```scheme
   ;; (import (scheme))
@@ -37,7 +37,7 @@
   ;;
   ;; If lz4 and zlib is not presented on your system library path, then `.so`
   ;; or `.a` files for these two libraries should also be presented in this
-  ;; directory.
+  ;; directory. (or pass the `-L` flag to the linker by yourself.)
   "/usr/local/lib/csv10.3.0/a6le")
 
 (define intermediate-filename "entry")
